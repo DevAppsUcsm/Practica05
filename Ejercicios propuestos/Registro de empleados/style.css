@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.nav-container {
+  width: 100%;
+  height: 60px;
+  background-color: #1b6eeb;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  box-shadow: 0px 6px 10px 0px #b1b1b1;
+  z-index: 20;
+}
+.nav-container h1 {
+  color: white;
+}
+.container {
+  display: flex;
+}
+.side-bar-container {
+  z-index: 10;
+  width: 250px;
+  height: 600px;
+  background-color: #f4f4f4;
+}
+.side-bar-container .menu {
+  margin-top: 50px;
+  width: 100%;
+  height: 47px;
+  color: rgb(43, 43, 43);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 16px;
+}
+.side-bar-container .menu:hover {
+  background-color: #1b6eeb;
+  color: white;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+.content {
+  width: 900px;
+  height: 500px;
+  display: grid;
+  grid-template-areas:
+    "title btn"
+    "tabla tabla";
+}
+
+.content h2 {
+  grid-area: title;
+}
+.content .btn {
+  grid-area: btn;
+  width: 117px;
+  height: 34px;
+  justify-self: end;
+  margin: 5px 0;
+  box-shadow: 4px 4px 5px 0px #b1b1b1;
+  font-size: 18px;
+}
+.content .btn button{
+    width: 117px;
+    height: 34px;
+    margin: 5px 0;
+    background-color: #1b6eeb;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+.content .table-container {
+  grid-area: tabla;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 460px;
+  background-color: #f4f4f4;
+  box-shadow: 6px 6px 15px 0px #b1b1b1;
+}
+.content .table-container .table {
+  background-color: rgb(255, 255, 255);
+  width: 750px;
+  height: 390px;
+}
+.content .table-container .table table {
+  width: 750px;
+  text-align: center;
+}
+.content .table-container table tr {
+  height: 34px;
+  border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+
